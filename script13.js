@@ -17,17 +17,17 @@
 // }
 // (num === 50) ? console.log('Ok!') : console.log('Error');
 
-const num = 50 
+const num = '51';
 
 switch (num) {
-    case 49:
+    case '49':
         console.log('Miss');
         break;
-    case 100: 
+    case '100': 
         console.log('Miss');
         break;
-    case 50:
-        console.log('D njxre!');
+    case '50':
+        console.log('In dot!');
         break;
     default:
         console.log('Not right');
