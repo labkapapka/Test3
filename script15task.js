@@ -23,5 +23,8 @@ for (let i = 0; i <2; i++ ){
           b = prompt('На сколько оцените его?', '');
           personalMovieDB.movies[a] = b;
 }
+<h1>comment2</h1>
+<h3>H3</h3>
 
 console.log(personalMovieDB);
+
