@@ -1,0 +1,7 @@
+how to work with git
+git clone url <folder name>
+input some changes
+ctrl + s
+git status                 (red color marked files wich was changed)
+git add -A
+git commit -a -m"six work commit"
