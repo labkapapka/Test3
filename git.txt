@@ -10,3 +10,9 @@ git push
 
 
 pull you should use  if you need download last changes which was added from another workplace 
+
+
+if you add some changes directly on GitHub and not pull it after you see nex error
+error: failed to push some refs to 'https://github.com/labkapapka/Test3.git'/...
+you need use git pool before
+
