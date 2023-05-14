@@ -4,5 +4,9 @@ input some changes
 ctrl + s
 git status                 (red color marked files wich was changed)
 git add -A
+git status                 (green color marked all changed files)
 git commit -a -m"six work commit"
 git push
+
+
+pull you should use  if you need download last changes which was added from another workplace 
