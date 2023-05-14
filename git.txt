@@ -16,3 +16,4 @@ if you add some changes directly on GitHub and not pull it after you see nex err
 error: failed to push some refs to 'https://github.com/labkapapka/Test3.git'/...
 you need use git pool before
 
+and after that use git push
