@@ -1,4 +1,3 @@
-
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
@@ -7,21 +6,35 @@ const personalMovieDB = {
     actors: {},
     genres: [],
     privat:false
-}
-
-// const a = prompt('Один из последних просмотренных фильмов? ', ''),
-//       b = prompt('На сколько оцените его?', ''),
-//       c = prompt('Один из просмотренныз фильмов?', '' ),
-//       d = prompt('На сколько оцените его?' , '');
-//       z = prompt('На сколько оцените его?' , '');
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[b] = c;
+};
 
 for (let i = 0; i <2; i++ ){
     const a = prompt('Один из последних просмотренных фильмов? ', ''),
           b = prompt('На сколько оцените его?', '');
-          personalMovieDB.movies[a] = b;
+
+    if (a != null && b !=null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    
+    } else {
+        console.log('error');
+        i--;
+    }
+    
+}
+
+if (personalMovieDB.count < 10) {
+    console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB < 30) {
+    console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30){
+    console.log("Вы киноман");
+} else {
+    console.log("Error");
 }
 
 console.log(personalMovieDB);
+
+// if prompt і вказати відміна то отримаємо null  а якщо ок то ""
+// if +prompt і вказати відміна то отримаємо 0 а якщо ок то теж 0
+// це особливысть динамычноъ типизацыъ
