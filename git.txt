@@ -5,3 +5,4 @@ ctrl + s
 git status                 (red color marked files wich was changed)
 git add -A
 git commit -a -m"six work commit"
+git push
