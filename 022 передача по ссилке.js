@@ -18,6 +18,9 @@ const obj = {
 
 // const copy = obj; // передається ссилка на уже существующий об"єкт
 
+// console.log(obj);
+// console.log(copy);
+
 // copy.a = 10;
 
 // console.log(copy);
@@ -27,9 +30,63 @@ const obj = {
 //           { a: 10, b: 1 } 
 
 function copy(mainObj) {
-    let objCopy {};
+    let objCopy = {};
 
     let key;
-    for (key in );
-
+    for (key in mainObj){
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
 }
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+}
+
+// const newNumbers =  copy(numbers);
+
+// newNumbers.a = 10;
+// console.log(numbers);
+// console.log(newNumbers);
+
+// newNumbers.c.x = 10;
+// console.log(numbers);
+// console.log(newNumbers);
+
+//есть глубокие и поверхностніе копии, више поверхностная копия.
+
+// const add = {
+//     d: 17,
+//     e: 20
+// };
+
+// const clone = Object.assign({}, add);
+
+// console.log(add);
+// console.log(clone);
+
+// clone.d = 20;
+
+
+// console.log(add);
+// console.log(clone);
+
+const oldArray = ['a', 'd', 'c'];
+const newArray = oldArray.slice();
+
+newArray[1] = 'dfdfdfefef';
+console.log(oldArray);
+console.log(newArray);
+
+
+
+
+
+
+
+
