@@ -83,6 +83,42 @@ newArray[1] = 'dfdfdfefef';
 console.log(oldArray);
 console.log(newArray);
 
+const video = ['youtube', 'vimeo','rutybe'],
+      blogs = ['wordpress', 'livejornal', 'blogger'],
+      internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
+
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num);
+
+const array = ["a", "b"]
+
+const newArray = [...array];
+console.log(array);
+console.log(newArray);
+
+const q = {
+    one: 1,
+    two: 2
+};
+
+const newObj = {...q};
+console.log(q);
+console.log(newObj);
+
+
+
+
+
+
 
 
 
