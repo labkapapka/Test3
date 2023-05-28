@@ -1,0 +1,56 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+background-color:blue;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: yellow;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.some {
+  background-color: seashell;
+}
+
+div {
+  display: block;
+  background-color:grey;
+}
+
+/* button:hover {
+  transform: scale(0.95);
+} */ 
+
+/* btn-block {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  border: none;
+  color: #2c2b2b;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+/* .overlay {
+  background-color: pink;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+a {
+  display: block;
+  margin-top: 30px;
+}
