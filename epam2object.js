@@ -10,7 +10,6 @@
 // console.log(tag);
 // console.log(n);
 
-
 // const w = new Object();
 // w.x = "test";
 // x.y = 1234;
@@ -67,15 +66,3 @@ const person1 = {
     firstName: "John",
     lastName: "Doe"
 }
-
-let tag = new Tag('Post', 30, 'female');
-let a = new Tag('Anna', 50, 'male');
-
-console.log(tag);
-console.log(a);
-
-
-const w = new Object();
-w.x = "test";
-this.y = 1234;
-console.log(w);
