@@ -2,16 +2,17 @@
 
 // const obj = new Object; застарілий спосіб створення об"єктів
 
-//створбємо об"єкт. (ключ, свойство : значення)
-// const options = {
-//     name: 'test',
-//     width: 1024,
-//     height: 1024,
-//     colors: {
-//         border: 'black',
-//         bg: 'red'
-//     }
-// }
+// створюємо об"єкт. (ключ, властивість, значення)
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
+}
 
 // console.log(options.name);
 

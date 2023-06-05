@@ -56,13 +56,37 @@ if (checkAge(age)) {
 };
 
 // методи call() и apply() можуть стати в нагоді при встановленні значення "this".
-const person = {
+// const person = {
+    
+//     fullName: function(city, country){
+//         return this.firstName + " " + this.lastName, + city + " ", + country;
+//     }
+// };
+
+// const person1 = {
+//     firstName: "John",
+//     lastName: "Doe"
+// }
+
+// person.fullName.call(person1, "Oslo", "Norway");
+// console.log(person.fullName);
+
+const persona = {
     fullName: function(city, country){
-        return this.firstName + " " + this.lastName, + city + " ", + country;
+        return this.firstName + " " + this.lastName + "," + city, + "," + country;
     }
 };
 
-const person1 = {
+const persona1 = {
     firstName: "John",
     lastName: "Doe"
-}
+};
+
+persona.fullName("Oslo", "Norvay");
+persona.fullName.apply(persona1);
+console.log(persona);
+
+// перероблення попереднього ДЗ через функції
+
+
+
