@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
             item.classList.remove('show', 'fade');
         });
     
-        tabs.forEach(tab => {
+        tabs.forEach(item => {
             item.classList.remove('tabheader__item_active');
         });
     
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     hideTabContent();
-    showTabContent(0);
+    showTabContent();
 
     tabsParent.addEventListener('click', (event) => {
         const target = event.target;
