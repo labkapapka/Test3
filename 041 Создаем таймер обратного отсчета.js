@@ -44,24 +44,37 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Timer
 
-    const deadline = '2023-07-06';
+    const deadline = '2023-06-10';
     function getTimeRemaining (endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
               days = Math.floor(t / (1000 * 60 * 60 * 24)),
               hours = Math.floor((t / (1000 * 60 * 60) % 24)),
               minutes = Math.floor((t /1000 / 60) % 60),
               seconds = Math.floor((t / 1000) % 60);
-
+              console.log(t);
+              console.log(days);
+              console.log(hours);
+              console.log(minutes);
+              console.log(seconds);          
         return {
             'total': t,
             'days': days,
             'hours': hours,
             'minutes': minutes,
-            'seconds': seconds
+            'seconds': seconds            
 
         };
 
     }
+
+    function getZero(num) {
+        if (num >= 0 && num < 10) {
+            return `0${num}`;
+        } else {
+            return num;
+        }
+    }
+    
 
     function setClock(selector, endtime) {
         const timer = document.querySelector(selector),
@@ -69,16 +82,18 @@ window.addEventListener('DOMContentLoaded', () => {
               hours = timer.querySelector('#hours'),
               minutes = timer.querySelector('#minutes'),
               seconds = timer.querySelector('#seconds'),
-              timeInterval = setInterval(updateClock, 100);
+              timeInterval = setInterval(updateClock, 1000);
+
+        updateClock();
 
         
         function updateClock() {
             const t = getTimeRemaining(endtime);
 
-            days.innerHTML = t.days;
-            hours.innerHTML = t.hours;
-            minutes.innerHTML = t.minutes;
-            seconds.inerHTML = t.seconds;
+            days.innerHTML = getZero(t.days);
+            hours.innerHTML = getZero(t.hours);
+            minutes.innerHTML = getZero(t.minutes);
+            seconds.innerHTML = getZero(t.seconds);
 
             if (t.total <= 0) {
                 clearInterval(timeInterval);
@@ -91,5 +106,3 @@ window.addEventListener('DOMContentLoaded', () => {
     setClock('.timer', deadline);
 
 });
-
-//  15.05
