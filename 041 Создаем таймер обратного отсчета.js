@@ -51,11 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
               hours = Math.floor((t / (1000 * 60 * 60) % 24)),
               minutes = Math.floor((t /1000 / 60) % 60),
               seconds = Math.floor((t / 1000) % 60);
-              console.log(t);
-              console.log(days);
-              console.log(hours);
-              console.log(minutes);
-              console.log(seconds);          
+                 
         return {
             'total': t,
             'days': days,
