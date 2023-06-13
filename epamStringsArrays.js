@@ -152,10 +152,15 @@
 // console.log(arr);
 
 // for
-let arr = ["Apple", "Orange", "Pear"];
-for (let i =0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
+// let arr = ["Apple", "Orange", "Pear"];
+// for (let i =0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
 
 
 // for.of
+// let fruits = ["Apple", "Orange", "Pear"];
+// for (let fruit of fruits) {
+//     console.log(fruit);
+// }
+
