@@ -79,8 +79,28 @@ document.body.appendChild(p);
 // події Форми
 // submit - коли користквач відправляє <form>
 // focus - коли користувач фокусується на елементі наприклад на <input>
-// 34.17
 
+// element.addEventListener(event, handler[, phase]);
+// event назва події, напр "click"
+// handler функція обробника
+// Phase необов'язковий аргумент
+// 3 фази занурення, мети, сплиття (bubling),  
+toursContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('tour-card_button-buy') {
+        const index = event.target.getAttribute('data-index');
+        showPurchaseConfirmation(index);
+    })
+ });
+
+// removeEventListener
+// щоб видалити обробник, ми повинні передати точно ту саму функцію, яку було призначено.
+function handlet(){
+    alert('Thanks!');
+}
+input.addEventListener("click", handler);
+// ....
+input.temoveEventListener("click, handler");
+//46.52 
 
 
 
