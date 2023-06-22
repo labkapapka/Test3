@@ -47,6 +47,40 @@ const moreInfoTours = [{
         duration: 12,
     },
 ];
+// document.addEventListener("DOMContentLoaded", function() {
+//     const infoButtons = document.querySelectorAll(".tour-card__button-info");
+//     const modal = document.getElementById("tourModal");
+//     const closeModal = document.querySelector(".close");
+//     const modalTitle = document.getElementById("modalTitle");
+//     const modalDescription = document.getElementById("modalDescription");
+//     const modalPrice = document.getElementById("modalPrice");
+//     const modalDuration = document.getElementById("modalDuration");
+//     infoButtons.forEach((button, index) => {
+//         button.addEventListener("click", () => {
+//             const tour = moreInfoTours[index];
+//             modalTitle.textContent = tour.name;
+//             modalDescription.textContent = tour.description;
+//             modalPrice.textContent = tour.price;
+//             modalDuration.textContent = tour.duration;
+//             modal.style.display = "block";
+
+//         });
+//     });
+
+
+//     closeModal.addEventListener("click", function() {
+//         modal.style.display = "none";
+//     });
+
+
+
+//     window.addEventListener("click", function(event) {
+//         if (event.target === modal) {
+//             modal.style.display = "none";
+//         }
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", function() {
     const infoButtons = document.querySelectorAll(".tour-card__button-info");
     const modal = document.getElementById("tourModal");
@@ -55,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const modalDescription = document.getElementById("modalDescription");
     const modalPrice = document.getElementById("modalPrice");
     const modalDuration = document.getElementById("modalDuration");
+
     infoButtons.forEach((button, index) => {
         button.addEventListener("click", () => {
             const tour = moreInfoTours[index];
@@ -64,15 +99,14 @@ document.addEventListener("DOMContentLoaded", function() {
             modalDuration.textContent = tour.duration;
             modal.style.display = "block";
 
+            // Збереження інформації про тур у localStorage
+            localStorage.setItem('selectedTour', JSON.stringify(tour));
         });
     });
-
 
     closeModal.addEventListener("click", function() {
         modal.style.display = "none";
     });
-
-
 
     window.addEventListener("click", function(event) {
         if (event.target === modal) {
@@ -80,3 +114,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+const selectedTour = JSON.parse(localStorage.getItem('selectedTour'));
