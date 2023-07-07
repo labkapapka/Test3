@@ -6,11 +6,21 @@
   "description": "jsdhjds\r sddfg\r dfgfgk\r relkgrlkgkgrlgkr\r rg\r r\r gr",
   "version": "1.0.0",
   "main": "012 script, prompt.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "json-server": "^0.17.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labkapapka/Test3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/labkapapka/Test3/issues"
+  },
+  "homepage": "https://github.com/labkapapka/Test3#readme"
 }
