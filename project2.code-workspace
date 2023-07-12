@@ -7,5 +7,7 @@
 			"path": "G:/OSPanel/domains/localhost"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project2"
+	}
 }
